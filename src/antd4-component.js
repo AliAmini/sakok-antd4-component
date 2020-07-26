@@ -1,8 +1,8 @@
 import React from 'react';
 import { Input, Alert, notification } from 'antd';
 
-// import 'antd/dist/antd.css'; // or 'antd/dist/antd.css'
-// import './antd4-component.less';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.css'
+import './antd4-component.less';
 
 const { Search } = Input;
 
