@@ -7,7 +7,7 @@
 
 1. add component to your code
 	1. import on top of your app `import Antd4Component from 'sakok-ant4-component';`
-	1. use in your jsx code: 
+	1. use in your jsx code:  
 
 	```
 	render () {
