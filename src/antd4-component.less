@@ -1,0 +1,41 @@
+.antd4-comp-wrapper {
+    
+}
+
+.test-components {
+    max-width: 400px;
+
+    p {
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .searches {
+        margin-top: 20px;
+
+        .ant-alert {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+/* do -----------RTL----------- antd4 */
+.ant-input-search:not(.ant-input-search-enter-button){
+    padding-left: 0;
+    padding-right: 11px;
+}
+
+.ant-input-search-icon, .ant-input-suffix{
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+.ant-input-suffix {
+    margin-right: 4px;
+    margin-left: 0;
+}
+.ant-input-search-icon::before {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+}
