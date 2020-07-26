@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './src/searchui-react-component.js',
+  entry: './src/antd4-component.js',
   output: {
     path: path.resolve('lib'),
-    filename: 'searchui-react-component.js',
+    filename: 'antd4-component.js',
     libraryTarget: 'commonjs2',
   },
   module: {
@@ -21,6 +21,12 @@ module.exports = {
           'style-loader',
           'css-loader',
           'sass-loader'
+        ]
+      },
+      {
+        test: /\.less$/,
+        use: [
+          'less-loader',
         ]
       }
     ],
