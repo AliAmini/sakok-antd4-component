@@ -14,7 +14,7 @@
 	  return (
 	    <div className="App">
 	      <SearchUI /> 
-		  <Button type="primary" onClick={e => console.log('Clicked!')}>
+		  <Button type="primary" onClick={e => console.log('Clicked!')} />
 	    </div>
       );
 	}
