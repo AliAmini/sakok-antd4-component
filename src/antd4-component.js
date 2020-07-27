@@ -1,8 +1,8 @@
 import React from 'react';
-import Antd from 'antd';
+import * as Antd from 'antd';
 
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.css'
-import './antd4-component.less';
+import './antd4-component.scss';
 
 const 
     AntdInput = Antd.Input,
@@ -12,7 +12,7 @@ const
     AntdButton = Antd.Button;
 
 
-export function Button() {
+export function Button(props) {
     return (
         <AntdButton {...props} />
     );
@@ -49,7 +49,7 @@ export function SearchUI() {
         setSearchText('');
 
         // show notification
-        notification.open({
+        AntdNotification.open({
             message: 'جستجو',
             description:
             'جستجوی شما ارسال شد. می‌توانید دوباره جستجو کنید.',
