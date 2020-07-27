@@ -1,12 +1,42 @@
 import React from 'react';
-import { Input, Alert, notification } from 'antd';
+import Antd from 'antd';
 
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.css'
 import './antd4-component.less';
 
-const { Search } = Input;
+const 
+    AntdInput = Antd.Input,
+    AntdSeacch = AntdInput.Search,
+    AntdAlert = Antd.Alert,
+    AntdNotification = Antd.notification,
+    AntdButton = Antd.Button;
 
-export default function Antd4Component() {
+
+export function Button() {
+    return (
+        <AntdButton {...props} />
+    );
+}
+
+export function Input(props) {
+    return (
+        <AntdInput {...props} />
+    );
+}
+
+export function SearchInput(props) {
+    return (
+        <AntdSeacch {...props} />
+    );
+}
+
+export function Alert(props) {
+    return (
+        <AntdAlert {...props} />
+    );
+}
+
+export function SearchUI() {
     const [searchText, setSearchText] = React.useState(null);
     const [allSearches, setAllSearches] = React.useState([]);
 
@@ -38,7 +68,7 @@ export default function Antd4Component() {
 
             <div className="test-components">
 
-                <Search 
+                <SearchInput 
                     placeholder="جست‌وجو کنید"
                     value={searchText}
                     onSearch={value => {addSearch(value); console.log('searched:', value);}}
