@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Antd from 'antd';
 
-import 'antd/dist/antd.css'; // or 'antd/dist/antd.css'
+// import 'antd/dist/antd.css'; // antd3 NOTE: TODO: We dont import Antd4 Style! it must added manually in another file to avoid style conflicts
 import './antd4-component.less';
 
 const 
