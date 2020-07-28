@@ -2,6 +2,8 @@
 
 ## Install
 
+***Note: You should add Antd style (`import 'antd/dist/antd.css'`). In this component we don't import it to avoid css conflicts between Antd v3 and Antd v4.***
+
 1. install package 
 	1. Run `npm i sakok-ant4-component`
 
